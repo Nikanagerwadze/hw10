@@ -9,9 +9,7 @@
 
 body{
     margin: 0;
-    width: 1920px;
-    height:100vh;
-    overflow-x: hidden;
+
 }
 
 .block1{
@@ -20,14 +18,19 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
+    background-size: cover;
+}
+
+.Banner{
+    height: 1035px;
 }
 
 .header{
-    margin-left: 347px;
     padding-top: 79px;
-    margin-right: 360px;
     display: flex;
     align-items: center;
+    margin-inline: auto ;
+    width: 1206px;
 }
 
 .menu{
@@ -56,17 +59,39 @@ body{
 
 }
 
-.item::before{
-    position: absolute;
-    width: 0px;
-    height: 3px;
-
-    border: 3px solid #FFDC60;
+.item{
+    position: relative;
 }
 
-.item::before:hover{
+.item::before{
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 3px;
+    background:#FFDC60;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.item:hover::before{
     transition: all 0.3s;
-    width: 25px;
+    width: 50%;
+}
+
+.item::after{
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 3px;
+    background:#5956E8;
+    left: 0;
+    bottom: 0;
+}
+
+.item:hover::after{
+    transition: all 0.6s;
+    width: 100%;
 }
 
 .getstarted{
@@ -234,6 +259,9 @@ body{
 
 .images{
     display: flex;
+    width: 1703px;
+    height: 801px;
+    margin-inline:auto ;
 }
 
 .Ellipse{
@@ -244,4 +272,160 @@ body{
 .Megaphone{
     margin-top: 60px;
     padding-right: 100px;
+}
+
+.block2{
+    display: flex;
+}
+
+.services{
+    display: flex;
+    background: #292930;
+    width: 1920px;
+    height: 1579px;
+}
+
+.content2{
+    display: flex;
+}
+
+.heading{
+    display: flex;
+    width: 1200px;
+    margin-inline:auto;
+    display: flex;
+
+}
+
+.header2{
+    display: flex;
+    gap: 39px;
+    height: 150px;
+    margin-top: 160px;
+    margin-left: 360px;
+}
+
+.title{
+    margin: 0;
+}
+
+.services01{
+    display: flex;
+    gap: 5px;
+    letter-spacing: 0.135em;
+    font-family:Nunito;
+    font-size: 15px;
+}
+
+.SER{
+    color: #D0D0D0;
+}
+
+.highimpact{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    width: 620px;
+    height: 88px;
+    color: #FFFFFF;
+}
+
+.high{
+    margin: 0;
+}
+
+.button3{
+    margin-top: 85px;
+    margin-left: 270px;
+}
+
+.Ourservices2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 174px;
+    height: 62px;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 0;
+
+}
+
+.card{
+    padding: 41px 39px;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
+.text1{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 110.5%;
+
+    color: #FFFFFF;
+}
+
+.text2{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.5%;
+    
+    color: #D0D0D0;
+}
+
+.read{
+    display: flex;
+    align-items: center;
+    padding: 17px 70px 18px;
+    gap: 10px;
+    
+    width: 266px;
+    height: 62px;
+    
+    background: transparent;
+    border-radius: 7px;
+    border:1px solid #424245 ;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #525255;
+    
+}
+
+.read:hover{
+    padding: 17px 70px 18px;
+    gap: 10px;
+
+    width: 266px;
+    height: 62px;
+
+    background: #FFDC60;
+    border-radius: 7px;
+    border: 0;
+
+    transition: all 0.5s;
+    fill: #5956E8;
+}
+
+.read svg:hover{
+fill:#5956E8;
 }
