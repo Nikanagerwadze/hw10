@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-
+    overflow-x: hidden;
 }
 
 .block1{
@@ -274,26 +274,16 @@ body{
     padding-right: 100px;
 }
 
-.block2{
-    display: flex;
-}
 
-.services{
-    display: flex;
+.services{ 
     background: #292930;
     width: 1920px;
     height: 1579px;
 }
 
-.content2{
-    display: flex;
-}
-
 .heading{
-    display: flex;
     width: 1200px;
     margin-inline:auto;
-    display: flex;
 
 }
 
@@ -301,8 +291,9 @@ body{
     display: flex;
     gap: 39px;
     height: 150px;
-    margin-top: 160px;
-    margin-left: 360px;
+    width: 1200PX;
+    margin-inline: auto;
+    padding-top: 100px;
 }
 
 .title{
@@ -355,8 +346,21 @@ body{
 
 }
 
+.serviceblock1{
+    display: flex;
+    gap: 88px;
+}
+
+.serviceblock2{
+    display: flex;
+    margin-top: 60px;
+    gap: 88px;
+}
+
 .card{
     padding: 41px 39px;
+    margin-top:170px ;
+    margin-left: 360px;
 
     width: 352px;
     height: 475px;
@@ -423,9 +427,68 @@ body{
     border: 0;
 
     transition: all 0.5s;
-    fill: #5956E8;
+    fill: #5956E8 !important;
 }
 
-.read svg:hover{
-fill:#5956E8;
+.read:hover path{
+    fill:#5956E8;
 }
+
+.card2{
+    padding: 41px 39px;
+    margin-top:170px ;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
+.card3{
+    padding: 41px 39px;
+    margin-top:170px ;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
+.card4{
+    padding: 41px 39px;
+    margin-left: 360px;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
+.card5{
+    padding: 41px 39px;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
+.card6{
+    padding: 41px 39px;
+
+    width: 352px;
+    height: 475px;
+
+    background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+    border: 1px solid #424245;
+    border-radius: 30px;
+}
+
