@@ -1,18 +1,19 @@
 @font-face {
-    font-family:Nunito;
+    font-family: Nunito;
     src: url(../Fonts/Nunito-VariableFont_wght.ttf);
     font-weight: normal;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
-    overflow-x: hidden;
+
 }
 
-.block1{
+.block1 {
     background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     width: 100%;
@@ -21,31 +22,31 @@ body{
     background-size: cover;
 }
 
-.Banner{
+.Banner {
     height: 1035px;
 }
 
-.header{
+.header {
     padding-top: 79px;
     display: flex;
     align-items: center;
-    margin-inline: auto ;
+    margin-inline: auto;
     width: 1206px;
 }
 
-.menu{
+.menu {
     padding-left: 175px;
     display: flex;
     gap: 58px;
     align-items: center
 }
 
-.menuitem{
+.menuitem {
     display: flex;
     gap: 30px;
 }
 
-.menuitem>a{
+.menuitem>a {
     font-family: 'Nunito';
     text-decoration: none;
     font-style: normal;
@@ -59,42 +60,44 @@ body{
 
 }
 
-.item{
+.item {
     position: relative;
 }
 
-.item::before{
+.item::before {
     position: absolute;
-    content:"";
+    content: "";
     width: 0;
     height: 3px;
-    background:#FFDC60;
+    background: #FFDC60;
     left: 0;
     bottom: 0;
     z-index: 1;
+    transition: all 0.3s;
 }
 
-.item:hover::before{
+.item:hover::before {
     transition: all 0.3s;
     width: 50%;
 }
 
-.item::after{
+.item::after {
     position: absolute;
-    content:"";
+    content: "";
     width: 0;
     height: 3px;
-    background:#5956E8;
+    background: #5956E8;
     left: 0;
     bottom: 0;
+    transition: all 0.3s;
 }
 
-.item:hover::after{
+.item:hover::after {
     transition: all 0.6s;
     width: 100%;
 }
 
-.getstarted{
+.getstarted {
     display: flex;
 
     justify-content: center;
@@ -117,14 +120,14 @@ body{
 
 }
 
-.getstarted:hover{
+.getstarted:hover {
     background: transparent;
     color: #292930;
     border: 1px solid #292930;
     transition: all 0.3s;
-} 
+}
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -139,26 +142,26 @@ body{
 
 }
 
-.agency{
+.agency {
     display: flex;
     align-items: center;
 }
 
-.slash{
+.slash {
     color: #FFDC60;
     font-family: 'Nunito';
     font-weight: 600;
     font-size: 15px;
 }
 
-.Agency{
+.Agency {
     font-family: 'Nunito';
     color: #292930;
     font-weight: 600;
     font-size: 15px
 }
 
-.marketing{
+.marketing {
     width: 740px;
     height: 231px;
 
@@ -174,11 +177,11 @@ body{
     margin-top: 28px;
 }
 
-.MR{
+.MR {
     color: #5956E8;
 }
 
-.lorem{
+.lorem {
     width: 593px;
     height: 56px;
 
@@ -190,12 +193,13 @@ body{
 
     color: #555555;
 }
-.Button2{
+
+.Button2 {
     display: flex;
     gap: 20px;
 }
 
-.Ourservices{
+.Ourservices {
     display: flex;
 
     justify-content: center;
@@ -217,14 +221,19 @@ body{
     color: #FFFFFF;
 }
 
-.Ourservices:hover{
+.Ourservices::before {
+    content: "";
+    transition: all 0.3s;
+}
+
+.Ourservices:hover {
     background: transparent;
     color: #292930;
     border: 1px solid #292930;
     transition: all 0.3s;
 }
 
-.getstarted2{
+.getstarted2 {
     display: flex;
 
     justify-content: center;
@@ -246,48 +255,48 @@ body{
     color: #FFFFFF;
 }
 
-.getstarted2:hover{
+.getstarted2:hover {
     background: transparent;
     color: #292930;
     border: 1px solid #292930;
     transition: all 0.3s;
 }
 
-.background{
+.background {
     margin: 0;
 }
 
-.images{
+.images {
     display: flex;
     width: 1703px;
     height: 801px;
-    margin-inline:auto ;
+    margin-inline: auto;
 }
 
-.Ellipse{
+.Ellipse {
     margin-left: 1085px;
     margin-top: 170px;
 }
 
-.Megaphone{
+.Megaphone {
     margin-top: 60px;
     padding-right: 100px;
 }
 
 
-.services{ 
+.services {
     background: #292930;
     width: 1920px;
     height: 1579px;
 }
 
-.heading{
+.heading {
     width: 1200px;
-    margin-inline:auto;
+    margin-inline: auto;
 
 }
 
-.header2{
+.header2 {
     display: flex;
     gap: 39px;
     height: 150px;
@@ -296,23 +305,23 @@ body{
     padding-top: 100px;
 }
 
-.title{
+.title {
     margin: 0;
 }
 
-.services01{
+.services01 {
     display: flex;
     gap: 5px;
     letter-spacing: 0.135em;
-    font-family:Nunito;
+    font-family: Nunito;
     font-size: 15px;
 }
 
-.SER{
+.SER {
     color: #D0D0D0;
 }
 
-.highimpact{
+.highimpact {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -322,16 +331,16 @@ body{
     color: #FFFFFF;
 }
 
-.high{
+.high {
     margin: 0;
 }
 
-.button3{
+.button3 {
     margin-top: 85px;
     margin-left: 270px;
 }
 
-.Ourservices2{
+.Ourservices2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,20 +355,20 @@ body{
 
 }
 
-.serviceblock1{
+.serviceblock1 {
     display: flex;
     gap: 88px;
 }
 
-.serviceblock2{
+.serviceblock2 {
     display: flex;
     margin-top: 60px;
     gap: 88px;
 }
 
-.card{
+.card {
     padding: 41px 39px;
-    margin-top:170px ;
+    margin-top: 170px;
     margin-left: 360px;
 
     width: 352px;
@@ -370,7 +379,7 @@ body{
     border-radius: 30px;
 }
 
-.text1{
+.text1 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -380,28 +389,28 @@ body{
     color: #FFFFFF;
 }
 
-.text2{
+.text2 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 156.5%;
-    
+
     color: #D0D0D0;
 }
 
-.read{
+.read {
     display: flex;
     align-items: center;
     padding: 17px 70px 18px;
     gap: 10px;
-    
+
     width: 266px;
     height: 62px;
-    
+
     background: transparent;
     border-radius: 7px;
-    border:1px solid #424245 ;
+    border: 1px solid #424245;
 
     font-family: 'Nunito';
     font-style: normal;
@@ -412,10 +421,10 @@ body{
     text-transform: capitalize;
 
     color: #525255;
-    
+
 }
 
-.read:hover{
+.read:hover {
     padding: 17px 70px 18px;
     gap: 10px;
 
@@ -430,13 +439,13 @@ body{
     fill: #5956E8 !important;
 }
 
-.read:hover path{
-    fill:#5956E8;
+.read:hover path {
+    fill: #5956E8;
 }
 
-.card2{
+.card2 {
     padding: 41px 39px;
-    margin-top:170px ;
+    margin-top: 170px;
 
     width: 352px;
     height: 475px;
@@ -446,9 +455,9 @@ body{
     border-radius: 30px;
 }
 
-.card3{
+.card3 {
     padding: 41px 39px;
-    margin-top:170px ;
+    margin-top: 170px;
 
     width: 352px;
     height: 475px;
@@ -458,7 +467,7 @@ body{
     border-radius: 30px;
 }
 
-.card4{
+.card4 {
     padding: 41px 39px;
     margin-left: 360px;
 
@@ -470,7 +479,7 @@ body{
     border-radius: 30px;
 }
 
-.card5{
+.card5 {
     padding: 41px 39px;
 
     width: 352px;
@@ -481,7 +490,7 @@ body{
     border-radius: 30px;
 }
 
-.card6{
+.card6 {
     padding: 41px 39px;
 
     width: 352px;
@@ -490,5 +499,267 @@ body{
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     border: 1px solid #424245;
     border-radius: 30px;
+}
+
+.prices {
+    background-color: #FFFFFF;
+    height: 1062px;
+    margin-top: 140px;
+}
+
+.pricing {
+    height: 798px;
+    padding-top: 90px;
+}
+
+.heading2 {
+    width: 473px;
+    height: 203px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.priceplan {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 156.5%;
+    padding-left: 143px;
+
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
+}
+
+.slash2 {
+    color: #5956E8;
+}
+
+.plans {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110.5%;
+
+    text-align: center;
+
+    color: #292930;
+}
+
+.card7 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 38px;
+    gap: 10px;
+
+    position: absolute;
+    width: 389px;
+    height: 595px;
+    left: 360px;
+    top: 3008px;
+
+    background: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 313px;
+    height: 464px;
+}
+
+.Price {
+    display: flex;
+}
+
+.text3>p {
+    margin: 0;
+}
+
+.img {
+    width: 55.14px;
+    height: 56.61px;
+    margin-top: 15px;
+    margin-right: 23px;
+    margin-left: 15px;
+}
+
+.ST {
+    position: relative;
+    width: 83px;
+    height: 28px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110.5%;
+    text-align: center;
+
+    color: #292930;
+
+    bottom: 10px;
+}
+
+.D {
+    width: 90px;
+    height: 54px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 110.5%;
+    /* or 55px */
+
+    text-align: center;
+
+    color: #292930;
+
+}
+
+.PM {
+    position: absolute;
+    width: 96px;
+    height: 44px;
+    left: 230.14px;
+    top: 87px;
+    margin-top: 34px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 244%;
+
+    text-align: center;
+
+    color: #555555;
+}
+
+hr {
+    border: 1px solid #D3D3D3;
+    width: 302px;
+    height: 0px;
+}
+
+.Points>p {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    width: 224px;
+    margin: 5px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 244%;
+
+    color: #555555;
+
+}
+
+.button5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 313px;
+    height: 64px;
+
+    background: #292930;
+    border-radius: 7px;
+    border: 0;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.buttonS {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.card8 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 38px;
+    gap: 10px;
+
+    position: absolute;
+    width: 389px;
+    height: 595px;
+    left: 360px;
+    top: 3008px;
+
+    background: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    margin-left: 406px;
+}
+
+.img4 {
+    margin-right: 54px;
+    margin-top: 15px;
+    width: 36.43px;
+    height: 55px;
+}
+
+.card9 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 38px;
+    gap: 10px;
+
+    position: absolute;
+    width: 389px;
+    height: 595px;
+    left: 360px;
+    top: 3008px;
+
+    background: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    margin-left: 812px;
+}
+
+.img5 {
+    margin-right: 44px;
+    margin-top: 15px;
+    width: 50.43px;
+    height: 55px;
+}
+
+.button5:hover{
+    transition: 0.3s;
+    background: #F6F6F6;
+    color: #292930;
 }
 
